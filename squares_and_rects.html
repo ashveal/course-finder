@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>Fluid grid</title>
+
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="assets/js/masonry.js"></script>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<meta name="viewport" content="width=460">
+	</head>
+	<body>
+			<div class="add" style="color: #fff; font-size: 2em; cursor: pointer; padding: 9px; border: 1px solid #FFF; display: inline-block; margin: 10px;"> Suggest more
+			</div>
+		<div class="container">
+			<div id="stamp-demo" style="width:120px; height: 220px; background: pink; float: right"></div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>		</div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item col2">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item row2">
+<span style="display:block; padding: 10px">Tall content</span>			</div>
+			<div class="item col2">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item row2">
+<span style="display:block; padding: 10px">Tall content</span>			</div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item row2">
+<span style="display:block; padding: 10px">Tall content</span>			</div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item col1">
+<span style="display:block; padding: 10px">Content</span>			</div>
+			<div class="item col1">
+	<span style="display:block; padding: 10px">Content</span>			</div>
+		</div>
+		<script>
+
+		
+
+
+		var container = document.querySelector('.container');
+		var msnry = new Masonry (container, {
+		  itemSelector: '.item',
+		  animationOptions: {
+		    duration: 300
+		  }
+		});
+
+		var demo = document.querySelector('#stamp-demo');
+		var stampElem = demo.querySelector('.stamp');
+	    msnry.stamp( stampElem );
+
+		
+		console.log(msnry);
+		
+		$('.container').on('click','.item', function(){
+			$(this).remove();
+			console.log(msnry);
+			msnry.layout();
+		});
+		
+		$('.add').click(function() {
+			var myrand = Math.random();
+			console.log(myrand);
+			if (myrand > 0.3)
+			{
+			$('.container').prepend('<div class="item col1 zzz"><span style="display:block; padding: 10px">New content</span></div>');
+			}
+			else
+			{
+			$('.container').prepend('<div class="item row2 zzz"><span style="display:block; padding: 10px">New tall content</span></div>');
+			}
+			
+			var items = document.querySelector('.zzz');
+		    msnry.stamp( stampElem );
+			msnry.prepended(items);
+		});
+		
+ 
+		</script>
+	</body>
+</html>

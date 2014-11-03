@@ -1,0 +1,35 @@
+ .squ {background-color: #eee; width: 118px; height: 118px; 
+	 background-position: center center; background-size: cover; float: left;
+ 	 border: 1px solid #111; cursor: pointer;}
+ 
+ .commerce {background-image: url('../images/commerce.jpg');}
+ .business {background-image: url('../images/business.jpg');}
+ .sports_science {background-image: url('../images/sports_science.jpg');}
+ .mining {background-image: url('../images/mining.jpg');}
+ .physical_ed {background-image: url('../images/physical_ed.jpg');}
+ .education {background-image: url('../images/education.jpg');}
+ .infotech {background-image: url('../images/infotech.jpg');}
+ .nursing {background-image: url('../images/nursing.jpg');}
+ .science {background-image: url('../images/science.jpg');}
+ 
+ 
+ body {background-color: #111; font-family: Arial, Helvetica, sans-serif;}
+ 
+ @media (min-width: 1030px) and (max-width: 9129px)  { .container { width: 1010px;  margin: auto; } }
+
+ @media (min-width: 859px) and (max-width: 1029px) { .container { width: 808px;  margin: auto; } }
+ 
+ @media (min-width: 657px) and (max-width: 858px) { .container { width: 606px;  margin: auto; } }
+ 
+ @media (min-width: 455px) and (max-width: 656px)   { .container { width: 404px;  margin: auto; } }
+ 
+ @media (min-width: 10px) and (max-width: 454px) { .container { width: 202px;  margin: auto; } .col2 {display:none;} 
+
+ .col1 {background-color: #eee; width: 100px; height: 100px; }
+
+ .col2 {background-color: #aaa; width: 201px; height: 100px; border: 1px solid #333;}
+
+ .row2 {background-color: #bbb; width: 100px; height: 201px; border: 1px solid #333;}
+
+
+} 

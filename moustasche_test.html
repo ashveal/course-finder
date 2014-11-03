@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>Fluid grid</title>
+
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="assets/js/mustache.js"></script>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<meta name="viewport" content="width=460">
+	</head>
+				<h2 style="color: #fff">Heading</h2>
+				<div id="content">
+				
+				<script id="template" type="x-tmpl-mustache">
+				{{#people}}
+				<p style="color:#eee">Hello, {{name}}, you are {{age}}</p>
+				<br><br>
+				{{/people}}
+				</script>
+				
+				</div>
+				
+				
+				
+				<script>
+				var data={"people":[{"name":"duncan","age":"42"},{"name":"Sam","age":"92"}]};
+				$(document).ready(function() {
+//					$('#content').html(Mustache.render('',data));
+				    var template = $('#template').html();
+				    Mustache.parse(template);   // optional, speeds up future uses
+				    var rendered = Mustache.render(template, data);
+				    $('#content').html(rendered);				
+				});
+//				$('#content').html(Mustache.render("Hello, {{name}}, you are {{age}}",data));
+				</script>
+					
+	</body>
+</html>
