@@ -42,6 +42,8 @@
 	 z-index: 1500;
  }
  
+ .search_icon { float: right; width: 250px;}
+ .search_icon img {width: 30px; position: relative; z-index: 1000; margin-left: -40px; margin-top: -18px; cursor: pointer;	}
 
  .selectmenu {border: 1px solid white; width: 95%; background-color: black; color: white; border-radius: 0px; padding: 6px; height: 30px; font-size: 1em;}
  
