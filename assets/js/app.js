@@ -2,6 +2,8 @@ var typeIter = -1;
 var type = ['Education','Commerce','Infotech','Nursing','Business','Mining','Sports_science','Physical_ed','Science'];
 var container = document.querySelector('.container');
 var removed_results = new Array();
+var grid_items = new Array();
+var pinned_items;
 
 var msnry = new Masonry (container, {
   itemSelector: '.item',
@@ -11,10 +13,74 @@ var msnry = new Masonry (container, {
   }
 });
 
+function reorder_items(){
+	//Move pinned to start of the parent
+	for (i = 0; i < grid_items.length; i++) { 
+		var item = grid_items[i];
+		for (pin_count=0; pin_count<pinned_items.length; pin_count++){
+			if (pinned_items[pin_count] == item.data("id")){
+				item.addClass("pinned");
+				item.parent().prepend(item);
+			}
+		}
+	}
+}
+
+function getCookie(name) {
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+}
+
+$(document).ready(function(){
+	
+	pinned_items = getCookie('pinned') ? JSON.parse(getCookie('pinned')) : new Array();
+	
+	for (i = 0; i < data.length; i++) { 
+       loadOne();
+	}
+
+	//re-order if pinned
+	reorder_items();
+
+	$(".pin").click(function(event){
+		pin_item($(this).parent().parent().data("id"));
+	});
+
+	msnry.addItems($(".item"));
+	msnry.layout();
+
+	//Filter by location
+	if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(determine_closest, denyPosition);
+	} else { 
+	    $('.position').html( "Geolocation is not supported by this browser.");
+	}
+
+});
+
+function pin_item(id){
+	
+	var add_pin = true;
+
+	for (i=0; i<pinned_items.length; i++){
+		if (pinned_items[i]==id) {
+			position = pinned_items.indexOf(id);
+			if ( ~position ) pinned_items.splice(position, 1);
+			add_pin = false;
+		}
+	}
+
+	if (add_pin) pinned_items.push(id);
+	console.log(add_pin);
+	document.cookie="pinned=" + JSON.stringify(pinned_items) + ";";
+
+	return add_pin;
+}
+
 $('.container').on('click','.dismiss', function(event){
   event.stopPropagation();
 	$(this).parents('.item').remove();
-	console.log(msnry);
 	msnry.layout();
 });
 
@@ -30,17 +96,15 @@ $(".selectmenu").change(function(event){
 	changeLocation(event.target.value.toLowerCase());
 });	
 
-if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(determine_closest, denyPosition);
-} else { 
-    $('.position').html( "Geolocation is not supported by this browser.");
-}
-
 function loadOne()
 {
 	$('.zzz').removeClass('zzz');
+
 	typeIter ++;
 	divStyle = 'col1';
+
+	if (typeIter == 9) {typeIter = 0}
+
 	var mytype = data[typeIter].name;
 	var x = Math.random();
 	if (x < 0.90) {
@@ -51,13 +115,15 @@ function loadOne()
 	}			
 	else  {
 		divStyle = 'row2';
-	}			
+	}
+
 	$('.container').prepend('<div class="item '+divStyle+' zzz '+mytype+'">\
-	<span style="display:block; padding: 10px" class="title">'+mytype.replace('_',' ')+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><span class="pin" style="float:right; border-radius: 50%; width: 23px; margin-right: 6px; text-align: center; display: inline-block"> <img src="assets/images/pin.png" style="width:10px"> </span></span>\
+	<span style="display:block; padding: 10px" class="title">'+mytype.replace('_',' ')+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><span class="pin"> <img src="assets/images/pin.png" style="width:10px"> </span></span>\
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
-	var items = document.querySelector('.zzz');
-	msnry.prepended(items);
-	
+
+	var item = $(".zzz");
+	item.data("id", data[typeIter].id);
+	return item;
 }
 
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
@@ -128,10 +194,6 @@ function filterTilesByKeyword(keyword){
 		else { $(item).remove()}
 		msnry.layout();
 	});
-}
-
-for (i = 0; i < data.length; i++) { 
-	loadOne();
 }
 	
 $('.filter').click(function() {
