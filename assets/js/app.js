@@ -72,7 +72,6 @@ function pin_item(id){
 	}
 
 	if (add_pin) pinned_items.push(id);
-	console.log(add_pin);
 	document.cookie="pinned=" + JSON.stringify(pinned_items) + ";";
 
 	return add_pin;
@@ -120,7 +119,6 @@ function loadOne()
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");
-	console.log(data[typeIter].sku);
 	item.data("sku", data[typeIter].sku);
 	return item;
 }
@@ -176,7 +174,6 @@ function determine_closest(position) {
 }
 
 function changeLocation(locationName){
-	loadOne();
 	filterTilesByKeyword (locationName);
 }
 

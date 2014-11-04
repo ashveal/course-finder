@@ -15,17 +15,18 @@
  .pin{
  	float:right; 
  	border-radius: 50%; 
- 	width: 23px; 
- 	height: 45px;
+ 	width: 20px; 
+ 	height: 20px;
  	margin-right: 6px; 
  	text-align: center; 
  	display: inline-block;
  	background-image: url('../images/pin.png');
+ 	background-position: center top;
  }
 
  .pinned .pin{
  	background-image: url('../images/pin.png');
- 	background-position: right top;
+ 	background-position: center bottom;
  }
  
  .item {border: 1px solid #333; 
