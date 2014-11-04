@@ -74,7 +74,9 @@
  
  body {background-color: #111; font-family: Arial, Helvetica, sans-serif;}
  
- @media (min-width: 1030px) and (max-width: 9129px)  { .container { width: 1010px;  margin: auto; } }
+ @media (min-width: 1550px) and (max-width: 9129px)  { .container { width: 1520px;  margin: auto; } }
+
+ @media (min-width: 1030px) and (max-width: 1011px)  { .container { width: 1010px;  margin: auto; } }
 
  @media (min-width: 859px) and (max-width: 1029px) { .container { width: 808px;  margin: auto; } }
  

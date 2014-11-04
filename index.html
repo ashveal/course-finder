@@ -23,14 +23,14 @@
 			 <label for="govtassist"><input type="checkbox" id="govtassist"> Govt funding available</label><br/><br/>
 			 
 			 <label>Campus:</label><br>
-			 <select class="selectmenu">
+			 <select id="campus_menu">
 				 <option>Ballarat</option>
 				 <option>Churchill</option>
 				 <option>Horsham</option>
 			 </select>
 			 <br><br>
-			<div class="position" style="color: #fff"></div>
-			<label>Nearest Campus: Ballarat</label><br/><br/>
+			<!--<div class="position" style="color: #fff"></div>-->
+			<label id="nearest_campus">Nearest Campus: Ballarat</label><br/><br/>
 		</div>
 		<br><br>
 		
@@ -45,6 +45,9 @@
 		<div class="displayarea">
 		</div>
 		</div>
+
+		<script type="text/javascript" src="assets/js/location_services.js"></script>
 		<script type="text/javascript" src="assets/js/app.js"></script>
+		
 	</body>
 </html>
