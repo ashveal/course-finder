@@ -115,8 +115,8 @@ function loadOne()
 		divStyle = 'row2';
 	}
 
-	$('.container').prepend('<div class="item '+divStyle+' zzz '+mytype+'">\
-	<span style="display:block; padding: 10px" class="title">'+mytype.replace('_',' ')+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><a href="#"><span class="pin"> </span></a></span>\
+	$('.container').prepend('<div class="item '+divStyle+' zzz '+data[typeIter].sku+'">\
+	<span style="display:block; padding: 10px" class="title">'+mytype+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><a href="#"><span class="pin"> </span></a></span>\
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");
