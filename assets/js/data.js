@@ -56,74 +56,92 @@ data = [{
 
 var disciplines = [
     {
+	'sku': 'auto',
 	'name': 'Automotive',
 	'color': '#005696',
     },
     {
+	'sku': 'build',
 	'name': 'Building & Construction',
 	'color': '#007DC6',
     },
     {
+	'sku': 'cook',
 	'name': 'Cookery & Service Skills',
 	'color': '#005696',
     },
     {
+	'sku': 'hair',
 	'name': 'Hair & Beauty',
 	'color': '#00A1B2',
     },
     {
+	'sku': 'rural',
 	'name': 'Rural & Horticulture',
 	'color': '#7DC353',
     },
     {
+	'sku': 'eng',
 	'name': 'Engineering',
 	'color': '#62217F',
     },
     {
+	'sku': 'envsci',
 	'name': 'Environmental, Physical & Mathematical Sciences',
 	'color': '#FDB813',
     },
     {
+	'sku': 'it',
 	'name': 'Information Technology',
 	'color': '#E20969',
     },
     {
+	'sku': 'business',
 	'name': 'Business & Sustainability',
 	'color': '#FFD204',
     },
     {
+	'sku': 'ohs',
 	'name': 'Occupational Health & Safety',
 	'color': '#007DC6',
     },
     {
+	'sku': 'nurse',
 	'name': 'Nursing, Midwifery & Healthcare',
 	'color': '#005696',
     },
     {
+	'sku': 'gensci',
 	'name': 'General, Medical & Food Sciences',
 	'color': '#007DC6',
     },
     {
+	'sku': 'humanmov',
 	'name': 'Human Movement & Sports Sciences',
 	'color': '#005696',
     },
     {
+	'sku': 'education',
 	'name': 'Education & Children\'s Services',
 	'color': '#00A1B2',
     },
     {
+	'sku': 'arts',
 	'name': 'Creative, Visual & Performing Arts',
 	'color': '#7DC353',
     },
     {
+	'sku': 'humanities',
 	'name': 'Humanities & Social Science',
 	'color': '#62217F',
     },
     {
+	'sku': 'psych',
 	'name': 'Psychology & Criminal Justice',
 	'color': '#62217F',
     },
     {
+	'sku': 'research',
 	'name': 'Research',
 	'color': '#62217F',
     },

@@ -66,14 +66,18 @@
  .item span {background-color: rgba(0,0,0,0.3); text-shadow: 0px 0px 5px #555;}
  
  .Commerce {background-image: url('../images/commerce.jpg');}
- .Business {background-image: url('../images/business.jpg');}
+ .business {background-image: url('../images/business.jpg');}
  .Sports_science {background-image: url('../images/sports_science.jpg');}
  .Mining {background-image: url('../images/mining.jpg');}
  .Physical_ed {background-image: url('../images/physical_ed.jpg');}
- .Education {background-image: url('../images/education.jpg');}
- .Infotech {background-image: url('../images/infotech.jpg');}
- .Nursing {background-image: url('../images/nursing.jpg');}
- .Science {background-image: url('../images/science.jpg');}
+ .edu {background-image: url('../images/education.jpg');}
+ .it {background-image: url('../images/infotech.jpg');}
+ .nurse {background-image: url('../images/nursing.jpg');}
+ .gensci {background-image: url('../images/science.jpg');}
+ .auto {background-image: url('../images/automotive.jpg');}
+ .research {background-image: url('../images/research.jpg');}
+ .arts {background-image: url('../images/research.jpg');}
+ 
  
  
  body {background-color: #111; font-family: Arial, Helvetica, sans-serif;}
