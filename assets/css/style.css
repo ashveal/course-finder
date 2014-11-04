@@ -42,14 +42,18 @@
 	 z-index: 1500;
  }
  
+ .search_icon { float: right; width: 250px;}
+ .search_icon img {width: 30px; position: relative; z-index: 1000; margin-left: -40px; margin-top: -20px; cursor: pointer;	}
 
  .selectmenu {border: 1px solid white; width: 95%; background-color: black; color: white; border-radius: 0px; padding: 6px; height: 30px; font-size: 1em;}
+ 
+ #filtertxt:focus { outline: none; }
  
  h2 {color: white; border-bottom: 2px solid white;}
  
  label {color: white; cursor: pointer;}
  
- .menutoggle {cursor: pointer; width: 50px; position: fixed; top: 10px; left: 10px;}
+ .menutoggle {cursor: pointer; width: 40px; position: fixed; top: 10px; left: 10px;}
  
  .menuout { left: 0px;}
  
@@ -82,9 +86,9 @@
  
  @media (min-width: 657px) and (max-width: 858px) { .container { width: 606px;  margin: auto; } }
  
- @media (min-width: 455px) and (max-width: 656px)   { .container { width: 404px;  margin: auto; } }
+ @media (min-width: 299px) and (max-width: 656px)   { .container { width: 650px;  margin-left: 18px; } }
  
- @media (min-width: 10px) and (max-width: 454px) { .container { width: 202px;  margin: auto; } .col2 {display:none;} 
+ @media (min-width: 10px) and (max-width: 298px) { .container { width: 202px;  margin: auto; } .col2 {display:none;} 
 
  .col1 {background-color: #eee; width: 100px; height: 100px; }
 
