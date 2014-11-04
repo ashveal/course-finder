@@ -103,8 +103,6 @@ function loadOne()
 	typeIter ++;
 	divStyle = 'col1';
 
-	if (typeIter == 9) {typeIter = 0}
-
 	var mytype = data[typeIter].name;
 	var x = Math.random();
 	if (x < 0.90) {
@@ -115,10 +113,16 @@ function loadOne()
 	}			
 	else  {
 		divStyle = 'row2';
+<<<<<<< HEAD
 	}
 
 	$('.container').prepend('<div class="item '+divStyle+' zzz '+mytype+'">\
 	<span style="display:block; padding: 10px" class="title">'+mytype.replace('_',' ')+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><a href="#"><span class="pin"> </span></a></span>\
+=======
+	}			
+	$('.container').prepend('<div class="item '+divStyle+' zzz '+data[typeIter].sku+'">\
+	<span style="display:block; padding: 10px" class="title"><span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><span class="pin"> <img src="assets/images/pin.png" style="width:20px"> </span>'+mytype+'</span>\
+>>>>>>> 821a369ffee4d92367996d0638ef3eccd0aaad02
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");
@@ -202,4 +206,10 @@ $('.filter').click(function() {
 
 $('.menutoggle').click(function() {
 	$('.menu').toggleClass('menuout');
+});
+
+$('#filtertxt').on('keyup',function(e){
+	console.log(e)
+	if (e.keyCode == 13)
+	{$('.filter').click();}
 });

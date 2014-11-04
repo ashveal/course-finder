@@ -96,3 +96,40 @@ $('a.btn-grid').click(function() {
 	return false;
 	
 });
+
+$('a.btn-domestic').click(function() {
+	
+	$(this).addClass('selected');
+	$('div.content-domestic').show();
+	$('a.btn-international').removeClass('selected');
+	$('div.content-international').hide();
+	
+	return false;
+	
+});
+
+$('a.btn-international').click(function() {
+	
+	$(this).addClass('selected');
+	$('div.content-international').show();
+	$('a.btn-domestic').removeClass('selected');
+	$('div.content-domestic').hide();
+	
+	return false;
+	
+});
+
+$(window).resize(function() {
+
+	if($(window).width() < 858) {
+		$('div.fast-facts').prepend($('div.rhs-content'));
+	} else {
+		$('div.rhs').prepend($('div.rhs-content'));
+	}
+	
+});
+
+
+
+
+
