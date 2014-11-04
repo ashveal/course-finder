@@ -18,7 +18,7 @@ function reorder_items(){
 	for (i = 0; i < grid_items.length; i++) { 
 		var item = grid_items[i];
 		for (pin_count=0; pin_count<pinned_items.length; pin_count++){
-			if (pinned_items[pin_count] == item.data("id")){
+			if (pinned_items[pin_count] == item.data("sku")){
 				item.addClass("pinned");
 				item.parent().prepend(item);
 			}
@@ -37,14 +37,14 @@ $(document).ready(function(){
 	pinned_items = getCookie('pinned') ? JSON.parse(getCookie('pinned')) : new Array();
 	
 	for (i = 0; i < data.length; i++) { 
-       loadOne();
+       grid_items.push(loadOne());
 	}
 
 	//re-order if pinned
 	reorder_items();
 
 	$(".pin").click(function(event){
-		pin_item($(this).parent().parent().data("id"));
+		pin_item($(this).closest($(".item")).data("sku"));
 	});
 
 	msnry.addItems($(".item"));
@@ -113,13 +113,14 @@ function loadOne()
 	}			
 	else  {
 		divStyle = 'row2';
-	}			
-	$('.container').prepend('<div class="item '+divStyle+' zzz '+data[typeIter].sku+'">\
-	<span style="display:block; padding: 10px" class="title"><span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><span class="pin"> <img src="assets/images/pin.png" style="width:20px"> </span>'+mytype+'</span>\
+	}
+
+	$('.container').prepend('<div class="item '+divStyle+' zzz '+mytype+'">\
+	<span style="display:block; padding: 10px" class="title">'+mytype.replace('_',' ')+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><a href="#"><span class="pin"> </span></a></span>\
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");
-	item.data("id", data[typeIter].id);
+	item.data("sku", data[typeIter].sku);
 	return item;
 }
 
