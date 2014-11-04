@@ -113,41 +113,54 @@ var disciplines = [
 var programs = [
     {
 	'name': 'Certificate IV in Fitness / Certificate IV in Massage Therapy Practice',
+    'sku': 'certivfitness'
     },
     {
 	'name': 'Certificate IV in Massage Therapy Practice',
+    'sku': 'certivmassage'
     },
     {
 	'name': 'Diploma of Remedial Massage',
+    'sku': 'dipremmassage'
     },
     {
 	'name': 'Bachelor of Exercise & Sport Science',
+    'sku': 'bachexcercisesport'
     },
     {
 	'name': 'Bachelor of Exercise & Sport Science (Honours)',
+    'sku': 'sportsciencehonours'
     },
     {
 	'name': 'Graduate Diploma of Clinical Exercise Physiology',
+    'sku': 'diplomaexcercisephys'
     },
     {
 	'name': 'Master of Clinical Exercise Physiology',
+    'sku': 'masterclinEx'
     },
     {
 	'name': 'Bachelor of Health & Physical Education',
+    'sku': 'BachHealthPhys'
     },
     {
 	'name': 'Bachelor of Education (Physical Education) Honors',
+    'sku': 'PhysEdHonors'
     },
     {
 	'name': 'Bachelor of Sport Management',
+    'sku': 'SportMan'
     },
     {
 	'name': 'Bachelor of Sport Management / Bachelor of Business',
+    'sku': 'BachBusinessSpot'
     },
     {
 	'name': 'Bachelor of Sport Management (Honours)',
+    'sku': 'SportManHonours'
     },
     {
 	'name': 'Graduate Diploma of Outdoor & Environmental Education / Graduate Certificate in Outdoor & Environmental Education',
+    'sku': 'GradDripOutdoor'
     },
 ];

@@ -120,6 +120,7 @@ function loadOne()
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");
+	console.log(data[typeIter].sku);
 	item.data("sku", data[typeIter].sku);
 	return item;
 }
