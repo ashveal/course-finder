@@ -18,7 +18,7 @@ function reorder_items(){
 	for (i = 0; i < grid_items.length; i++) { 
 		var item = grid_items[i];
 		for (pin_count=0; pin_count<pinned_items.length; pin_count++){
-			if (pinned_items[pin_count] == item.data("id")){
+			if (pinned_items[pin_count] == item.data("sku")){
 				item.addClass("pinned");
 				item.parent().prepend(item);
 			}
@@ -37,15 +37,14 @@ $(document).ready(function(){
 	pinned_items = getCookie('pinned') ? JSON.parse(getCookie('pinned')) : new Array();
 	
 	for (i = 0; i < data.length; i++) { 
-       loadOne();
+       grid_items.push(loadOne());
 	}
 
 	//re-order if pinned
 	reorder_items();
 
 	$(".pin").click(function(event){
-		console.log($(this).parent().parent().parent().data("id"));
-		pin_item($(this).parent().parent().parent().data("id"));
+		pin_item($(this).closest($(".item")).data("sku"));
 	});
 
 	msnry.addItems($(".item"));
@@ -53,7 +52,7 @@ $(document).ready(function(){
 
 	//Filter by location
 	if (navigator.geolocation) {
-	    //navigator.geolocation.getCurrentPosition(determine_closest, denyPosition);
+	    navigator.geolocation.getCurrentPosition(determine_closest, denyPosition);
 	} else { 
 	    $('.position').html( "Geolocation is not supported by this browser.");
 	}
@@ -123,7 +122,7 @@ function loadOne()
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");
-	item.data("id", data[typeIter].id);
+	item.data("sku", data[typeIter].sku);
 	return item;
 }
 
