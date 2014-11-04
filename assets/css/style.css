@@ -84,9 +84,9 @@
  
  @media (min-width: 657px) and (max-width: 858px) { .container { width: 606px;  margin: auto; } }
  
- @media (min-width: 455px) and (max-width: 656px)   { .container { width: 404px;  margin: auto; } }
+ @media (min-width: 299px) and (max-width: 656px)   { .container { width: 650px;  margin-left: 18px; } }
  
- @media (min-width: 10px) and (max-width: 454px) { .container { width: 202px;  margin: auto; } .col2 {display:none;} 
+ @media (min-width: 10px) and (max-width: 298px) { .container { width: 202px;  margin: auto; } .col2 {display:none;} 
 
  .col1 {background-color: #eee; width: 100px; height: 100px; }
 
