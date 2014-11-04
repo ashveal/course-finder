@@ -150,7 +150,6 @@ var programs = [
     {
 	'sku': 'sportmanage',
 	'name': 'Bachelor of Sport Management',
-    'sku': 'SportMan'
     },
     {
 	'name': 'Bachelor of Sport Management / Bachelor of Business',
