@@ -47,13 +47,15 @@
  
  .menu {padding: 20px;
 	 position: fixed;
-	 top: 60px;
+	 top: 5%;
 	 background-color: rgba(20,20,20,0.85);
 	 width: 250px;
 	 left: -340px;
 	 -webkit-transition: 0.8s;
 	 transition: 0.8s;
 	 z-index: 1500;
+	 height: 90%;
+	 overflow:auto;
  }
  
  .search_icon { float: right; width: 250px;}
