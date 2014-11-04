@@ -1,0 +1,146 @@
+
+div.clear {
+	clear: both;
+}
+
+div.content {
+	padding: 20px 0;
+}
+
+div.content h1 {
+	color: #FFF;
+	font-size: 22px;
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid #FFF;
+}
+
+div.content h3 {
+	color: #FFF;
+	font-size: 14px;
+	margin: 0 0 5px 0;
+}
+
+div.content p {
+	color: #FFF;
+	font-size: 10px;
+	margin: 0 0 5px 0;
+}
+
+div.content .lhs {
+	float: left;
+	/*width: 75%;*/
+}
+
+div.content .rhs {
+	float: left;
+	/*width: 25%;*/
+}
+
+div.fast-facts {
+	padding: 10px 0;
+}
+
+div.content .rhs-content {
+	background: #444;
+}
+
+div.content .rhs-content ul {
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+
+div.content .rhs-content li {
+	color: #FFF;
+	font-size: 10px;
+}
+
+div.content .rhs-content a {
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	color: #CCC;
+	text-decoration: none;
+	width: 50%;
+	background: #333;
+	font-size: 12px;
+}
+
+div.content .rhs-content a.selected {
+	background: #444;
+}
+
+div.content .rhs-content .content-domestic,
+div.content .rhs-content .content-international {
+	padding: 15px 10px;
+}
+
+div.container {
+	width: 100%;
+}
+
+div.video {
+	margin-left: 20px;
+}
+
+
+@media (min-width: 1550px) and (max-width: 9129px) {
+	.content { width: 1520px;  margin: auto; }
+	.content .lhs { width: 1000px; }
+	.content .rhs { width: 500px; padding-left: 20px; }
+	div.program-header .program-header-lhs {
+		float: left;
+		width: 50%;
+	}
+	div.program-header .program-header-rhs {
+		float: left;
+		width: 50%;
+	}
+}
+
+@media (min-width: 1030px) and (max-width: 1549px) {
+	.content { width: 1000px;  margin: auto; }
+	.content .lhs { width: 650px; }
+	.content .rhs { width: 330px; padding-left: 20px; }
+	div.program-header .program-header-lhs {
+		float: left;
+		width: 50%;
+	}
+	div.program-header .program-header-rhs {
+		float: left;
+		width: 50%;
+	}
+}
+
+@media (min-width: 859px) and (max-width: 1029px) {
+	.content { width: 808px;  margin: auto; }
+	.content .lhs { width: 500px; }
+	.content .rhs { width: 288px; padding-left: 20px; }
+	div.program-header .program-header-lhs {
+		float: left;
+		width: 50%;
+	}
+	div.program-header .program-header-rhs {
+		float: left;
+		width: 50%;
+	}
+}
+ 
+@media (min-width: 300px) and (max-width: 858px) {
+	.container { margin: 0; }
+	.content { width: 100%;  margin: auto; }
+	.content .lhs { width: 100%; float: none; }
+	.content .rhs { width: 100%; float: none; padding: 0; }
+	div.program-header .program-header-lhs { width: 100%, float: none; }
+	div.program-header .program-header-rhs { width: 100%, float: none; }
+	div.video { margin-left: 0; }
+}
+
+
+/* 4 columns by default */
+.grid-sizer { width: 25%; }
+
+@media screen and (max-width: 858px) {
+  /* 2 columns for smaller screens */
+  .grid-sizer { width: 50%; }
+}
+
