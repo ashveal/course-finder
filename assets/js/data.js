@@ -131,33 +131,42 @@ var disciplines = [
 
 var programs = [
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Certificate IV in Fitness / Certificate IV in Massage Therapy Practice',
     },
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Certificate IV in Massage Therapy Practice',
     },
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Diploma of Remedial Massage',
     },
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Bachelor of Exercise & Sport Science',
     },
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Bachelor of Exercise & Sport Science (Honours)',
     },
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Graduate Diploma of Clinical Exercise Physiology',
     },
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Master of Clinical Exercise Physiology',
     },
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Bachelor of Health & Physical Education',
     },
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Bachelor of Education (Physical Education) Honors',
     },
     {
-	'name': 'Graduate Diploma of Outdoor & Environmental Education',
+	'name': 'Bachelor of Sport Management',
+    },
+    {
+	'name': 'Bachelor of Sport Management / Bachelor of Business',
+    },
+    {
+	'name': 'Bachelor of Sport Management (Honours)',
+    },
+    {
+	'name': 'Graduate Diploma of Outdoor & Environmental Education / Graduate Certificate in Outdoor & Environmental Education',
     },
 ];
