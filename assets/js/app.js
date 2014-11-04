@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 	//Filter by location
 	if (navigator.geolocation) {
-	    navigator.geolocation.getCurrentPosition(determine_closest, denyPosition);
+	    //navigator.geolocation.getCurrentPosition(determine_closest, denyPosition);
 	} else { 
 	    $('.position').html( "Geolocation is not supported by this browser.");
 	}
