@@ -1,4 +1,4 @@
-var typeIter = Math.floor(Math.random()*6);
+var typeIter = -1;
 var type = ['Education','Commerce','Infotech','Nursing','Business','Mining','Sports_science','Physical_ed','Science'];
 var container = document.querySelector('.container');
 var removed_results = new Array();
@@ -66,16 +66,7 @@ $('.container').on('click','.dismiss', function(event){
 });
 
 $('.container').on('click','.item .title', function(event){
-	 $('.displayarea').html('');
-	 $(this).parents('.item').clone().appendTo('.displayarea');
-	 stylebef = $('.displayarea').find('.item').attr('style');
-	 setTimeout(function(){
-		 $('.displayarea').find('.item').attr('style',stylebef + ' ; width:670px;height:400px; z-index: 100; opacity: 1')
- }, 400);
- setTimeout(function(){
-	 $('.displayarea').find('.item').attr('style',stylebef + ' ; width:670px;height:410px; z-index: 100; opacity: 1;')
-}, 900);
-	 
+	window.location = 'programs.html';
 });
 
 $('.add').click(function() {
@@ -94,6 +85,7 @@ function loadOne()
 	divStyle = 'col1';
 
 	if (typeIter == 9) {typeIter = 0}
+
 	var mytype = data[typeIter].name;
 	var x = Math.random();
 	if (x < 0.90) {
