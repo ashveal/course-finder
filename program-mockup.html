@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>Disciplines</title>
+
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="assets/js/disciplines.js"></script>
+		<script type="text/javascript" src="assets/js/masonry.js"></script>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<meta name="viewport" content="width=650">
+	</head>
+	<b_dy>
+		<div class="menutoggle">
+		<img src="assets/images/menu.png" style="width:35px" />
+	</div>
+	<div class="search_icon">
+			<input id="filtertxt" style="float: left; border: 0px; border-bottom: 1px solid white; background-color: black; color: white; font-size: 1em; 20px; padding: 6px; width: 200px; display: inline-block"/><br/>
+		<img class="filter" src="assets/images/mag_glass.png"/>
+	</div>
+		<div class="menu">
+			<h2>Course finder</h2>
+			<div class="add" style="color: #fff; font-size: 1em; cursor: pointer; padding: 6px; border: 1px solid #FFF; display: inline-block;  width: 90%"> Suggest
+				courses </div><br/><br/><br/>
+			
+			
+			 <label for="govtassist"><input type="checkbox" id="govtassist"> Govt funding available</label><br/><br/>
+			 <label for="govtassist"><input type="checkbox" id="govtassist"> Online learning</label><br/><br/>
+			 <label for="govtassist"><input type="checkbox" id="govtassist"> Full time</label><br/><br/>
+			 <label for="govtassist"><input type="checkbox" id="govtassist"> Part time</label><br/><br/>
+			 
+			 <label>Campus:</label><br>
+			 <select class="selectmenu">
+				 <option>Ballarat</option>
+				 <option>Churchill</option>
+				 <option>Horsham</option>
+			 </select>
+			 <br><br>
+			<div class="position" style="color: #fff"></div>
+			<label>Nearest Campus: Ballarat</label><br/><br/>
+			
+			
+				<div class="applynow" style="color: black; background-color: white; font-size: 1em; width: 120px; font-weight: bold; padding: 6px; margin-left: 60px; margin-top:16px; text-align: center; cursor: pointer">
+					APPLY NOW
+			</div>
+			<br/><br/>
+			
+		</div>
+		<br><br>
+		
+		<div class="container">
+			<br><br><br>
+			
+			<div class="item col1 zzz Sports_science" >	
+				<iframe class="hide" width="280" height="280" style="margin-left: -40px; margin-top: -20px" src="http://www.youtube.com/embed/Rj6mmj6tu08" frameborder="0" allowfullscreen></iframe>
+				
+	<span style="display:block; padding: 10px; z-index: 20" class="title">
+			<span class="pin" style="float:right; border-radius: 50%; width: 23px; text-align: center; display: inline-block">
+		<img src="assets/images/pin.png" style="width:10px; margin-top:2px"/>
+			</span>
+			<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; text-align: center; display: inline-block">
+		<img src="assets/images/trash.png" style="width:20px; margin-top:2px"/>
+			</span>
+		
+		Environmental, Physical and Mathematical Sciences
+	</span>			<div class="desc">Vivamus elit felis, pharetra at nisl eget, 
+		suscipit aliquet nulla. Pellentesque diam nisi.  Keywords: Commercial</div>
+		<img class="playvid" src="assets/images/play.png" style="width: 70px; margin-left: 65px; margin-top: 20px">
+</div>
+
+<style>
+.hide {visibility: hidden;}
+</style>
+
+<script>
+$(document).ready(function() {
+	$('.playvid').click(function() {
+		alert('foo')
+		$('.col1').append('<iframe width="280" height="280" style="margin-left: -40px; margin-top: -20px" src="http://www.youtube.com/embed/Rj6mmj6tu08" frameborder="0" allowfullscreen></iframe>');	
+	});
+});
+</script>
+
+
+
+
+
+
+		<div class="displayarea">
+		</div>
+		</div>
+		<script type="text/javascript" src="assets/js/app.js"></script>
+	</body>
+</html>
