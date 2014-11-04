@@ -19,41 +19,74 @@ $('a.btn-list').click(function() {
 	
 		var $item = $(this);
 		var $img = '';
-		
-		if($item.hasClass('Physical_ed')) {
-			$img = 'Physical_ed';
+
+		//such hacks
+		if($item.hasClass('education')) {
+			$img = 'education';
 		}
 		
-		if($item.hasClass('Education')) {
-			$img = 'Education';
+		if($item.hasClass('it')) {
+			$img = 'it';
 		}
 		
-		if($item.hasClass('Commerce')) {
-			$img = 'Commerce';
+		if($item.hasClass('nurse')) {
+			$img = 'nurse';
 		}
 		
-		if($item.hasClass('Business')) {
-			$img = 'Business';
+		if($item.hasClass('gensci')) {
+			$img = 'gensci';
 		}
 		
-		if($item.hasClass('Sports_science')) {
-			$img = 'Sports_science';
+		if($item.hasClass('auto')) {
+			$img = 'auto';
 		}
 		
-		if($item.hasClass('Mining')) {
-			$img = 'Mining';
+		if($item.hasClass('research')) {
+			$img = 'research';
 		}
 		
-		if($item.hasClass('Nursing')) {
-			$img = 'Nursing';
+		if($item.hasClass('arts')) {
+			$img = 'arts';
 		}
 		
-		if($item.hasClass('Infotech')) {
-			$img = 'Infotech';
+		if($item.hasClass('ohs')) {
+			$img = 'ohs';
 		}
 		
-		if($item.hasClass('Science')) {
-			$img = 'Science';
+		if($item.hasClass('eng')) {
+			$img = 'eng';
+		}
+		
+		if($item.hasClass('business')) {
+			$img = 'business';
+		}
+		
+		if($item.hasClass('envsci')) {
+			$img = 'envsci';
+		}
+		
+		if($item.hasClass('psych')) {
+			$img = 'psych';
+		}
+		
+		if($item.hasClass('humanmov')) {
+			$img = 'humanmov';
+		}
+		
+		if($item.hasClass('sportmanage')) {
+			$img = 'sportmanage';
+		}
+		
+		if($item.hasClass('GradDripOutdoor')) {
+			$img = 'GradDripOutdoor';
+		}
+		
+		if($item.hasClass('bachexcercisesport')) {
+			$img = 'bachexcercisesport';
+		}
+		
+		if($item.hasClass('sportsciencehonours')) {
+			$img = 'sportsciencehonours';
 		}
 	
 		if($item.find('.program-image').size() == 1) {
