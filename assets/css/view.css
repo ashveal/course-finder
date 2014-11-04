@@ -1,0 +1,63 @@
+div.viewtoggle {
+	position: absolute;
+	top: 12px;
+	right: 270px;
+}
+
+div.viewtoggle a {
+	display: inline-block;
+	margin: 0 3px;
+	width: 24px;
+	height: 24px;
+	background: url(../images/ico-view.png) no-repeat left bottom;
+}
+
+div.viewtoggle a.btn-list {
+	background-position: right top;
+}
+
+div.viewtoggle a.btn-grid {
+	background-position: left top;
+}
+
+div.viewtoggle a.btn-list-selected {
+	background-position: right bottom;
+}
+
+div.viewtoggle a.btn-grid-selected {
+	background-position: left bottom;
+}
+
+div.list-view div.item {
+	width: 100%;
+	height: auto;
+	background: #333;
+	margin-bottom: 10px;	
+}
+
+div.list-view div.item span.title {
+	padding: 10px 0 10px 120px !important;
+}
+
+div.list-view div.item div.desc {
+	position: relative;
+	top: auto;
+	left: auto;
+	background: none;
+	height: auto;
+	width: auto;
+	padding: 10px 0 10px 120px;
+}
+
+div.list-view div.program-image {
+	width: 100px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: 100% 100%;
+}
+
+div.list-view span.dismiss {
+	margin-right: 15px;
+}
