@@ -43,17 +43,17 @@ function loadOne()
 	divStyle = 'col1';
 	var mytype = data[typeIter].name;
 	var x = Math.random();
-	if (x < 0.53) {
+	if (x < 0.90) {
 		divStyle = 'col1';
 	}			
-	else if (x > 0.53 && x < 0.85) {
+	else if (x > 0.90 && x < 0.95) {
 		divStyle = 'col2';
 	}			
 	else  {
 		divStyle = 'row2';
 	}			
 	$('.container').prepend('<div class="item '+divStyle+' zzz '+mytype+'">\
-	<span style="display:block; padding: 10px" class="title">'+mytype.replace('_',' ')+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; text-align: center; display: inline-block"> x </span></span>\
+	<span style="display:block; padding: 10px" class="title">'+mytype.replace('_',' ')+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><span class="pin" style="float:right; border-radius: 50%; width: 23px; margin-right: 6px; text-align: center; display: inline-block"> <img src="assets/images/pin.png" style="width:10px"> </span></span>\
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
 	var items = document.querySelector('.zzz');
 	msnry.prepended(items);
