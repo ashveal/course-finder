@@ -16,14 +16,16 @@
  	float:right; 
  	border-radius: 50%; 
  	width: 23px; 
+ 	height: 45px;
  	margin-right: 6px; 
  	text-align: center; 
  	display: inline-block;
- 	background-image: url('../images/pin.jpg');
+ 	background-image: url('../images/pin.png');
  }
 
  .pinned .pin{
- 	background-image: url('../images/pin.jpg');
+ 	background-image: url('../images/pin.png');
+ 	background-position: right top;
  }
  
  .item {border: 1px solid #333; 

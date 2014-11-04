@@ -44,7 +44,8 @@ $(document).ready(function(){
 	reorder_items();
 
 	$(".pin").click(function(event){
-		pin_item($(this).parent().parent().data("id"));
+		console.log($(this).parent().parent().parent().data("id"));
+		pin_item($(this).parent().parent().parent().data("id"));
 	});
 
 	msnry.addItems($(".item"));
@@ -118,7 +119,7 @@ function loadOne()
 	}
 
 	$('.container').prepend('<div class="item '+divStyle+' zzz '+mytype+'">\
-	<span style="display:block; padding: 10px" class="title">'+mytype.replace('_',' ')+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><span class="pin"> <img src="assets/images/pin.png" style="width:10px"> </span></span>\
+	<span style="display:block; padding: 10px" class="title">'+mytype.replace('_',' ')+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><a href="#"><span class="pin"> </span></a></span>\
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");
