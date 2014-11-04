@@ -6,6 +6,8 @@
  
  .container { margin: auto;}
  
+ .pagetitle {color: white; margin-top: 10px; margin-left: 60px; font-size: 2em;}
+ 
  .displayarea {margin-top: 20px;}
  
  .desc {position: absolute; top: 210px; left: 190px; width: 390px; height: 120px; background-color: rgba(0,0,0,0.5); padding: 20px;}
@@ -15,17 +17,18 @@
  .pin{
  	float:right; 
  	border-radius: 50%; 
- 	width: 23px; 
- 	height: 45px;
+ 	width: 20px; 
+ 	height: 20px;
  	margin-right: 6px; 
  	text-align: center; 
  	display: inline-block;
  	background-image: url('../images/pin.png');
+ 	background-position: center top;
  }
 
  .pinned .pin{
  	background-image: url('../images/pin.png');
- 	background-position: right top;
+ 	background-position: center bottom;
  }
  
  .item {border: 1px solid #333; 

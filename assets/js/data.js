@@ -112,54 +112,67 @@ var disciplines = [
 
 var programs = [
     {
+    'uni': 'Horsham',
 	'name': 'Certificate IV in Fitness / Certificate IV in Massage Therapy Practice',
     'sku': 'certivfitness'
     },
     {
+    'uni': 'Horsham',
 	'name': 'Certificate IV in Massage Therapy Practice',
     'sku': 'certivmassage'
     },
     {
+    'uni': 'Horsham',
 	'name': 'Diploma of Remedial Massage',
     'sku': 'dipremmassage'
     },
     {
+    'uni': 'Horsham',
 	'name': 'Bachelor of Exercise & Sport Science',
     'sku': 'bachexcercisesport'
     },
     {
+    'uni': 'Ballarat',
 	'name': 'Bachelor of Exercise & Sport Science (Honours)',
     'sku': 'sportsciencehonours'
     },
     {
+    'uni': 'Ballarat',
 	'name': 'Graduate Diploma of Clinical Exercise Physiology',
     'sku': 'diplomaexcercisephys'
     },
     {
+    'uni': 'Ballarat',
 	'name': 'Master of Clinical Exercise Physiology',
     'sku': 'masterclinEx'
     },
     {
+    'uni': 'Ballarat',
 	'name': 'Bachelor of Health & Physical Education',
     'sku': 'BachHealthPhys'
     },
     {
+    'uni': 'Churchill',
 	'name': 'Bachelor of Education (Physical Education) Honors',
     'sku': 'PhysEdHonors'
     },
     {
+    'uni': 'Churchill',
 	'sku': 'sportmanage',
 	'name': 'Bachelor of Sport Management',
     },
     {
+    'uni': 'Churchill',
 	'name': 'Bachelor of Sport Management / Bachelor of Business',
     'sku': 'BachBusinessSpot'
     },
     {
+    'uni': 'Ballarat',
 	'name': 'Bachelor of Sport Management (Honours)',
     'sku': 'SportManHonours'
     },
     {
+    'uni': 'Churchill',
 	'name': 'Graduate Diploma of Outdoor & Environmental Education / Graduate Certificate in Outdoor & Environmental Education',
     'sku': 'GradDripOutdoor'
     },
