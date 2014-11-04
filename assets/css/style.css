@@ -47,6 +47,8 @@
 
  .selectmenu {border: 1px solid white; width: 95%; background-color: black; color: white; border-radius: 0px; padding: 6px; height: 30px; font-size: 1em;}
  
+ #filtertxt:focus { outline: none; }
+ 
  h2 {color: white; border-bottom: 2px solid white;}
  
  label {color: white; cursor: pointer;}
