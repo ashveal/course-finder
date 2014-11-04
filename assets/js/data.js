@@ -148,6 +148,7 @@ var programs = [
     'sku': 'PhysEdHonors'
     },
     {
+	'sku': 'sportmanage',
 	'name': 'Bachelor of Sport Management',
     'sku': 'SportMan'
     },
