@@ -103,8 +103,6 @@ function loadOne()
 	typeIter ++;
 	divStyle = 'col1';
 
-	if (typeIter == 9) {typeIter = 0}
-
 	var mytype = data[typeIter].name;
 	var x = Math.random();
 	if (x < 0.90) {
