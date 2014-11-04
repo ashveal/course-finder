@@ -117,7 +117,7 @@ function loadOne()
 		divStyle = 'row2';
 	}			
 	$('.container').prepend('<div class="item '+divStyle+' zzz '+data[typeIter].sku+'">\
-	<span style="display:block; padding: 10px" class="title"><span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><span class="pin"> <img src="assets/images/pin.png" style="width:10px"> </span>'+mytype+'</span>\
+	<span style="display:block; padding: 10px" class="title"><span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><span class="pin"> <img src="assets/images/pin.png" style="width:20px"> </span>'+mytype+'</span>\
 	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");
@@ -201,4 +201,10 @@ $('.filter').click(function() {
 
 $('.menutoggle').click(function() {
 	$('.menu').toggleClass('menuout');
+});
+
+$('#filtertxt').on('keyup',function(e){
+	console.log(e)
+	if (e.keyCode == 13)
+	{$('.filter').click();}
 });
