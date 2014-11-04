@@ -36,8 +36,8 @@ $(document).ready(function(){
 	
 	pinned_items = getCookie('pinned') ? JSON.parse(getCookie('pinned')) : new Array();
 	
-	for (i = 0; i < 25; i++) { 
-		grid_items.push(loadOne());
+	for (i = 0; i < data.length; i++) { 
+       loadOne();
 	}
 
 	//re-order if pinned
