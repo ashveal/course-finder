@@ -14,6 +14,14 @@ var msnry = new Masonry (container, {
 });
 
 function reorder_items(){
+	
+	//clear existing pins
+	$('div.item').each(function() {
+		if($(this).hasClass('pinned')) {
+			$(this).removeClass('pinned');
+		}
+	});
+	
 	//Move pinned to start of the parent
 	for (i = 0; i < grid_items.length; i++) { 
 		var item = grid_items[i];
@@ -44,7 +52,17 @@ $(document).ready(function(){
 	reorder_items();
 
 	$(".pin").click(function(event){
+		/*if(pin_item($(this).closest($(".item")).data("sku"))) {
+			reorder_items();
+			msnry.reloadItems();
+			msnry.layout();
+		}*/
 		pin_item($(this).closest($(".item")).data("sku"));
+		reorder_items();
+		msnry.reloadItems();
+		msnry.layout();
+
+		return false;
 	});
 
 	msnry.addItems($(".item"));
@@ -73,7 +91,7 @@ function pin_item(id){
 
 	if (add_pin) pinned_items.push(id);
 	document.cookie="pinned=" + JSON.stringify(pinned_items) + ";";
-
+	
 	return add_pin;
 }
 
@@ -83,8 +101,19 @@ $('.container').on('click','.dismiss', function(event){
 	msnry.layout();
 });
 
-$('.container').on('click','.item .title', function(event){
-	window.location = 'programs.html';
+$('.container').on('click','span.title', function(event){
+	//quick hack to load each page level
+	switch(window.document.title) {
+		case "Disciplines":
+			window.location = 'programs.html';
+		break;
+		
+		case "Programs":
+			window.location = 'single-program.html';
+		break;
+		
+		default:
+	}
 });
 
 $('.add').click(function() {
@@ -114,9 +143,12 @@ function loadOne()
 		divStyle = 'row2';
 	}
 
+	/*$('.container').prepend('<div class="item '+divStyle+' zzz '+data[typeIter].sku+'">\
+	<span style="display:block; padding: 10px" class="title">'+mytype+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-right: 20px; text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><a href="#"><span class="pin"> </span></a></span>\
+	<div class="uni">'+data[typeIter].uni+'</div></div>');*/
+	
 	$('.container').prepend('<div class="item '+divStyle+' zzz '+data[typeIter].sku+'">\
-	<span style="display:block; padding: 10px" class="title">'+mytype+'<span class="dismiss" style="float:right; border-radius: 50%; width: 23px; margin-left: text-align: center; display: inline-block"> <img src="assets/images/trash.png" style="width:20px"> </span><a href="#"><span class="pin"> </span></a></span>\
-	<div class="desc">'+data[typeIter].description+'</div><div class="uni">'+data[typeIter].uni+'</div></div>');
+	<span class="dismiss"><img src="assets/images/trash.png" style="width:20px"></span><a href="#" class="btn-pin"><span class="pin"></span></a><span style="display:block; padding: 10px" class="title">'+mytype+'</span><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");
 	item.data("sku", data[typeIter].sku);

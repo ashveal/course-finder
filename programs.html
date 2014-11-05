@@ -1,16 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 	<head>
-		<title>Fluid grid</title>
+		<title>Programs</title>
 
 		<script type="text/javascript" src="assets/js/jquery.js"></script>
 		<script type="text/javascript" src="assets/js/data.js"></script>
 		<script>
 		var data = programs;
-		var next = 'courses.html';
+		var next = 'single-program.html';
 		</script>
 		<script type="text/javascript" src="assets/js/masonry.js"></script>
 		<link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/view.css">
 		<meta name="viewport" content="width=650">
 	</head>
 	<body>
@@ -18,6 +19,10 @@
 		<img src="assets/images/menu.png" style="width:35px" />
 	</div>
 	<div class="pagetitle">Programs</div>
+    <div class="viewtoggle">
+		<a href="#" class="btn-grid btn-grid-selected"></a> 
+		<a href="#" class="btn-list"></a> 
+	</div>
 	<div class="search_icon">
 			<input id="filtertxt" style="float: left; border: 0px; border-bottom: 1px solid white; background-color: black; color: white; font-size: 1em; 20px; padding: 6px; width: 200px; display: inline-block"/><br/>
 		<img class="filter" src="assets/images/mag_glass.png"/>
@@ -46,10 +51,10 @@
 		<br><br>
 		
 		<div class="container">
-			<div class="displayarea">
-			</div>
+			<div class="displayarea"></div>
 		</div>
 
 		<script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/views.js"></script>
 	</body>
 </html>

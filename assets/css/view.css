@@ -37,6 +37,11 @@ div.list-view div.item {
 
 div.list-view div.item span.title {
 	padding: 10px 0 10px 120px !important;
+	position: relative;
+	bottom: auto;
+	width: auto;
+	float: left;
+	background: none;
 }
 
 div.list-view div.item div.desc {
@@ -55,9 +60,9 @@ div.list-view div.program-image {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-size: 100% 100%;
+	background-size: 100%;
 }
 
 div.list-view span.dismiss {
-	margin-right: 15px;
+	margin-right: 5px;
 }

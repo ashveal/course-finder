@@ -97,6 +97,7 @@ $('a.btn-list').click(function() {
 		
 	});
 		
+	listview.reloadItems();
 	listview.layout();
 	
 	return false;
@@ -124,6 +125,7 @@ $('a.btn-grid').click(function() {
 	
 	});
 	
+	gridview.reloadItems();
 	gridview.layout();
 	
 	return false;

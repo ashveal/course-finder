@@ -41,7 +41,7 @@
   	 border: 1px solid #111; 
 	 opacity: 0.8;
 	 filter: saturate(0.3);
-	 -webkit-filter: saturate(0.3);
+	 /*-webkit-filter: saturate(0.3);*/
  }
  
  .item:hover {opacity: 1;
@@ -80,11 +80,14 @@
  
  .position {font-size: 11px;}
  
- .title {cursor: pointer;}
+ .title {cursor: pointer; position: absolute; bottom: 0; width: 100%; }
  
- .dismiss {background-color: #999; font-weight: bold;}
+ .dismiss {background-color: #999; font-weight: bold; position: absolute; top: 5px; right: 5px; width: 20px; height: 20px; border-radius: 10px; }
+ .item a.btn-pin { position: absolute; top: 5px; right: 25px; }
  
- .item span {background-color: rgba(0,0,0,0.3); text-shadow: 0px 0px 5px #555;}
+ .item span {background-color: rgba(0,0,0,0.5); /*text-shadow: 0px 0px 5px #555;*/}
+ 
+ .item div.uni { display: none; }
  
  .education {background-image: url('../images/education.jpg');}
  .it {background-image: url('../images/infotech.jpg');}
