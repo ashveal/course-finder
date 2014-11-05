@@ -20,7 +20,7 @@ $('a.btn-list').click(function() {
 		var $item = $(this);
 		var $img = '';
 
-		//such hacks
+		//hack to load existing image into newly created div
 		if($item.hasClass('education')) {
 			$img = 'education';
 		}
@@ -154,6 +154,7 @@ $('a.btn-international').click(function() {
 
 $(window).resize(function() {
 
+	//move fast facts panel to top on smaller screens
 	if($(window).width() < 858) {
 		$('div.fast-facts').prepend($('div.rhs-content'));
 	} else {
