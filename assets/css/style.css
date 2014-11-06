@@ -47,6 +47,7 @@
  .item:hover {opacity: 1;
 	 filter: saturate(0.7);
 	 -webkit-filter: saturate(0.6);
+	 cursor: pointer;
  
  }
  

@@ -101,7 +101,7 @@ $('.container').on('click','.dismiss', function(event){
 	msnry.layout();
 });
 
-$('.container').on('click','span.title', function(event){
+$('.container').on('click','div.item', function(event){
 	//quick hack to load each page level
 	switch(window.document.title) {
 		case "Disciplines":
