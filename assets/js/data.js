@@ -2,19 +2,19 @@
 var disciplines = [
     {
     'uni': 'Ballarat',
-	'sku': 'auto',
+	'sku': 'automotive',
 	'name': 'Automotive',
 	'color': '#005696',
     },
     {
     'uni': 'Ballarat',
-	'sku': 'build',
+	'sku': 'building',
 	'name': 'Building & Construction',
 	'color': '#007DC6',
     },
     {
     'uni': 'Ballarat',
-	'sku': 'cook',
+	'sku': 'cookery',
 	'name': 'Cookery & Service Skills',
 	'color': '#005696',
     },
@@ -32,13 +32,13 @@ var disciplines = [
     },
     {
     'uni': 'Ballarat',
-	'sku': 'eng',
+	'sku': 'engineering',
 	'name': 'Engineering',
 	'color': '#62217F',
     },
     {
     'uni': 'Ballarat',
-	'sku': 'envsci',
+	'sku': 'environmental_science',
 	'name': 'Environmental, Physical & Mathematical Sciences',
 	'color': '#FDB813',
     },
@@ -62,19 +62,19 @@ var disciplines = [
     },
     {
     'uni': 'Horsham',
-	'sku': 'nurse',
+	'sku': 'nursing',
 	'name': 'Nursing, Midwifery & Healthcare',
 	'color': '#005696',
     },
     {
     'uni': 'Horsham',
-	'sku': 'gensci',
+	'sku': 'general_science',
 	'name': 'General, Medical & Food Sciences',
 	'color': '#007DC6',
     },
     {
     'uni': 'Horsham',
-	'sku': 'humanmov',
+	'sku': 'human_movement',
 	'name': 'Human Movement & Sports Sciences',
 	'color': '#005696',
     },
@@ -98,7 +98,7 @@ var disciplines = [
     },
     {
     'uni': 'Churchill',
-	'sku': 'psych',
+	'sku': 'psychology',
 	'name': 'Psychology & Criminal Justice',
 	'color': '#62217F',
     },

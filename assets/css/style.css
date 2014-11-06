@@ -89,23 +89,6 @@
  
  .item div.uni { display: none; }
  
- .education {background-image: url('../images/education.jpg');}
- .it {background-image: url('../images/infotech.jpg');}
- .nurse {background-image: url('../images/nursing.jpg');}
- .gensci {background-image: url('../images/science.jpg');}
- .auto {background-image: url('../images/automotive.jpg');}
- .research {background-image: url('../images/research.jpg');}
- .arts {background-image: url('../images/arts.jpg');}
- .ohs {background-image: url('../images/ohs.jpg');}
- .eng {background-image: url('../images/mining.jpg');}
- .business {background-image: url('../images/business.jpg');}
- .envsci {background-image: url('../images/envsci.jpg');}
- .psych {background-image: url('../images/psychology.jpg');}
- .humanmov {background-image: url('../images/human_movement.jpg');}
- .sportmanage {background-image: url('../images/sport_management_business.jpg');}
- .GradDripOutdoor {background-image: url('../images/outdoor_education.jpg');}
-.bachexcercisesport, .sportsciencehonours {background-image: url('../images/exercise_sport_science.jpg');}
- 
  body {background-color: #111; font-family: Arial, Helvetica, sans-serif;}
  
  @media (min-width: 1550px) and (max-width: 9129px)  { .container { width: 1520px;  margin: auto; } }
