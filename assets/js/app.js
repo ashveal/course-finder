@@ -73,6 +73,7 @@ $(document).ready(function(){
 	    navigator.geolocation.getCurrentPosition(determine_closest, denyPosition);
 	} else { 
 	    $('.position').html( "Geolocation is not supported by this browser.");
+		poptoast('Geolocation is not supported by this browser. Your results will not be filtered.');
 	}
 
 });
@@ -89,7 +90,14 @@ function pin_item(id){
 		}
 	}
 
-	if (add_pin) pinned_items.push(id);
+	if (add_pin) {pinned_items.push(id)
+		poptoast('You have pinned one item. ' + ($('.pinned').length + 1) + ' items are now pinned.');
+	
+	}
+	else {
+		poptoast('You have removed a pinned item. ' + ($('.pinned').length - 1) + ' items remain pinned.');
+		
+	}
 	document.cookie="pinned=" + JSON.stringify(pinned_items) + ";";
 	
 	return add_pin;
@@ -197,6 +205,7 @@ function determine_closest(position) {
 
     //call drop down change event sto filter results
     $("#nearest_campus_name").html("Nearest Campus: " + closest_uni.name.titleize());
+	poptoast("Your nearest campus is: " + closest_uni.name.titleize() + ". Results have been filtered.");
     changeLocation(closest_uni.name);
 }
 
@@ -205,6 +214,9 @@ function changeLocation(locationName){
 }
 
 function denyPosition(position) {
+	
+	poptoast('Your current location has not been provided by this browser. You may filter results by Campus with the menu options instead.');
+	
 	//location services denied
 	//hide closest uni name
 	//choose ballarat as a default
@@ -232,3 +244,11 @@ $('#filtertxt').on('keyup',function(e){
 	if (e.keyCode == 13)
 	{$('.filter').click();}
 });
+
+function poptoast(message) {
+	$('.toast').remove();
+	$('body').append('<div class="toast" style=""><span class="dismisstoast">x</span><br>'+message+'</div>');
+	$('.toast').delay(300).animate({top: 25},600,function(){}).delay(3900).animate({top: -225},600,function(){});
+}
+
+$('body').on('click tap touch','.dismisstoast',function(){$('.toast').remove();});
