@@ -53,8 +53,48 @@ $('a.btn-list').click(function() {
 			$img = 'ohs';
 		}
 		
-		if($item.hasClass('eng')) {
-			$img = 'eng';
+		if($item.hasClass('rural')) {
+			$img = 'rural';
+		}
+		
+		if($item.hasClass('humanities')) {
+			$img = 'humanities';
+		}
+		
+		if($item.hasClass('human_movement')) {
+			$img = 'human_movement';
+		}
+		
+		if($item.hasClass('general_science')) {
+			$img = 'general_science';
+		}
+		
+		if($item.hasClass('nursing')) {
+			$img = 'nursing';
+		}
+		
+		if($item.hasClass('cookery')) {
+			$img = 'cookery';
+		}
+		
+		if($item.hasClass('hair')) {
+			$img = 'hair';
+		}
+		
+		if($item.hasClass('environmental_science')) {
+			$img = 'environmental_science';
+		}
+		
+		if($item.hasClass('building')) {
+			$img = 'building';
+		}
+		
+		if($item.hasClass('automotive')) {
+			$img = 'automotive';
+		}
+		
+		if($item.hasClass('engineering')) {
+			$img = 'engineering';
 		}
 		
 		if($item.hasClass('business')) {
@@ -65,8 +105,8 @@ $('a.btn-list').click(function() {
 			$img = 'envsci';
 		}
 		
-		if($item.hasClass('psych')) {
-			$img = 'psych';
+		if($item.hasClass('psychology')) {
+			$img = 'psychology';
 		}
 		
 		if($item.hasClass('humanmov')) {
@@ -87,6 +127,46 @@ $('a.btn-list').click(function() {
 		
 		if($item.hasClass('sportsciencehonours')) {
 			$img = 'sportsciencehonours';
+		}
+		
+		if($item.hasClass('SportManHonours')) {
+			$img = 'SportManHonors';
+		}
+		
+		if($item.hasClass('BachBusinessSpot')) {
+			$img = 'BachBusinessSpot';
+		}
+		
+		if($item.hasClass('SportManHonours')) {
+			$img = 'SportManHonours';
+		}
+		
+		if($item.hasClass('PhysEdHonors')) {
+			$img = 'PhysEdHonors';
+		}
+		
+		if($item.hasClass('BachHealthPhys')) {
+			$img = 'BachHealthPhys';
+		}
+		
+		if($item.hasClass('masterclinEx')) {
+			$img = 'masterclinEx';
+		}
+		
+		if($item.hasClass('diplomaexcercisephys')) {
+			$img = 'diplomaexcercisephys';
+		}
+		
+		if($item.hasClass('dipremmassage')) {
+			$img = 'dipremmassage';
+		}
+		
+		if($item.hasClass('certivmassage')) {
+			$img = 'certivmassage';
+		}
+		
+		if($item.hasClass('certivfitness')) {
+			$img = 'certivfitness';
 		}
 	
 		if($item.find('.program-image').size() == 1) {

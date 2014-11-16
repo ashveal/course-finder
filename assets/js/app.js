@@ -150,7 +150,9 @@ function loadOne()
 	else  {
 		divStyle = 'row2';
 	}
-	$('.container').prepend('<div class="item '+divStyle+' zzz '+data[typeIter].sku+'" style="background-image: url(assets/images/'+data[typeIter].sku+'.jpg);">\
+	/*$('.container').prepend('<div class="item '+divStyle+' zzz '+data[typeIter].sku+'" style="background-image: url(assets/images/'+data[typeIter].sku+'.jpg);">\
+	<span class="dismiss"><img src="assets/images/trash.png" style="width:20px"></span><a href="#" class="btn-pin"><span class="pin"></span></a><span style="display:block; padding: 10px" class="title">'+mytype+'</span><div class="uni">'+data[typeIter].uni+'</div></div>');*/
+	$('.container').prepend('<div class="item '+divStyle+' zzz '+data[typeIter].sku+'">\
 	<span class="dismiss"><img src="assets/images/trash.png" style="width:20px"></span><a href="#" class="btn-pin"><span class="pin"></span></a><span style="display:block; padding: 10px" class="title">'+mytype+'</span><div class="uni">'+data[typeIter].uni+'</div></div>');
 
 	var item = $(".zzz");

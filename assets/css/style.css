@@ -96,6 +96,41 @@
  
  .item div.uni { display: none; }
  
+ .arts {background-image: url('../images/arts.jpg');}
+ .automotive {background-image: url('../images/automotive.jpg');}
+ .education {background-image: url('../images/education.jpg');}
+ .it {background-image: url('../images/it.jpg');}
+ .nursing {background-image: url('../images/nursing.jpg');}
+ .gensci {background-image: url('../images/science.jpg');}
+ .auto {background-image: url('../images/automotive.jpg');}
+ .research {background-image: url('../images/research.jpg');}
+ .rural {background-image: url('../images/rural.jpg');}
+ .humanities {background-image: url('../images/humanities.jpg');}
+ .general_science {background-image: url('../images/general_science.jpg');}
+ .environmental_science {background-image: url('../images/environmental_science.jpg');} 
+ .ohs {background-image: url('../images/ohs.jpg');}
+ .hair {background-image: url('../images/hair.jpg');}
+ .cookery {background-image: url('../images/cookery.jpg');}
+ .building {background-image: url('../images/building.jpg');} 
+ .engineering {background-image: url('../images/engineering.jpg');}
+ .business {background-image: url('../images/business.jpg');}
+ .envsci {background-image: url('../images/envsci.jpg');}
+ .psychology {background-image: url('../images/psychology.jpg');}
+ .human_movement {background-image: url('../images/human_movement.jpg');}
+ .sportmanage {background-image: url('../images/sportmanage.jpg');}
+ .GradDripOutdoor {background-image: url('../images/GradDripOutdoor.jpg');}
+ .bachexcercisesport, .sportsciencehonours {background-image: url('../images/bachexcercisesport.jpg');}
+ .SportManHonours {background-image: url('../images/SportManHonors.jpg');} 
+ .BachBusinessSpot {background-image: url('../images/BachBusinessSpot.jpg');}
+ .PhysEdHonors {background-image: url('../images/PhysEdHonors.jpg');}  
+ .masterclinEx {background-image: url('../images/masterclinEx.jpg');}  
+ .BachHealthPhys {background-image: url('../images/BachHealthPhys.jpg');}
+ .diplomaexcercisephys {background-image: url('../images/diplomaexcercisephys.jpg');}
+ .certivmassage {background-image: url('../images/certivmassage.jpg');}
+ .dipremmassage {background-image: url('../images/dipremmassage.jpg');}
+ .certivfitness {background-image: url('../images/certivfitness.jpg');}
+ 
+ 
  body {background-color: #111; font-family: Arial, Helvetica, sans-serif;}
  
  @media (min-width: 1550px) and (max-width: 9129px)  { .container { width: 1520px;  margin: auto; } }
